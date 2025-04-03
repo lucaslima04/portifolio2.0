@@ -15,7 +15,7 @@ html{
 body{
     margin-top: 100px;
     width:100%;
-	height:100%;
+	height:fit-content;
     background-color: #000000;
     color: var(--bg-color);
     font-family: "Anonymous Pro";
@@ -129,7 +129,6 @@ header{
     font-size: 2.8rem;
     overflow: hidden;
     width: 100%;
-    display: flex;
     padding-bottom: 100vh;
     padding-top: 100vh;
     font-family: 'Alegreya SC';
@@ -466,7 +465,7 @@ i{
 }
 
 footer{
-    bottom: 0;
+    bottom: 0; 
 }
 
 #boxmylinks2{
@@ -479,4 +478,147 @@ footer{
 
 #credits{
     margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 500px) {
+    header {
+        height: auto;
+        padding-block: 20px;
+    }
+
+    .btnmenu {
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+
+    #secmain{
+        width: 100%;
+    }
+
+    #boximpact{
+        font-size: 1.8rem;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #impact {
+        font-size: 2.8rem;
+        padding: 0;
+        height: 100%;
+    }
+    
+    /*---------------------------------------------------------*/
+    
+
+    #secinitpage{
+        padding-top: 100%;
+        padding-bottom: 60%;
+    }
+
+    #boxpresent{
+        padding-bottom: 50px;
+    }
+
+    #present {
+        font-size: 2.6rem;
+    }
+    
+    #subpresent {
+        font-size: 1.5rem;
+    }
+
+    #boxmylinks{
+        width: 50%;
+    }
+
+    #boxperson{
+        padding-bottom: 0;
+    }
+
+    #person{
+        width: 80%;
+    }
+
+    #photo{
+        width:80%;
+        padding-bottom: 20px;
+    }
+
+    #boxtittle2{
+        padding-bottom: 20%;
+    }
+
+    #tittle2{
+        font-size: 3rem;
+    }
+
+    #boxme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #myinter{
+        padding-bottom: 20%;
+        width: 80%;
+    }
+
+    #myinter2{
+        margin-inline: 0;
+        width: 80%;
+        padding-bottom: 20%;
+    }
+    
+    #mytecs{
+        margin-inline: 0;
+        width: 80%;
+        padding-bottom: 20%;
+    }
+
+    #teclist{
+    width: 100%;
+    }
+
+    li{
+        text-align: start;
+    }
+
+    #tittle3{
+        margin-top: 40%;
+        margin-bottom: 10%;
+    }
+
+    .boxcard {
+        width: 80%;
+        height: fit-content;
+    }
+    
+    .cardlink {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    #boxsoon{
+        position: static;
+        transform: translate(0%, 0%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 40px;
+    }
+
+    #secfooter{
+        height: 17%;
+    }
+
+    #credits{
+        margin-bottom: 15%;
+        margin-top: 10px;
+    }
 }
