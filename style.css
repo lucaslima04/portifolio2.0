@@ -1,0 +1,482 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    width:100%;
+	height:100%;
+}
+
+body{
+    margin-top: 100px;
+    width:100%;
+	height:100%;
+    background-color: #000000;
+    color: var(--bg-color);
+    font-family: "Anonymous Pro";
+    overflow-x: hidden;
+}
+
+.anonymous-pro-regular {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alegreya-sc-regular {
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #1e1e1e;
+    --detail-color: #7D00C0
+}
+
+
+
+
+
+/*PARTICLES..........................................................................................................*/
+
+
+
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    z-index: 3;
+}
+
+
+
+/*HEADER..........................................................................................................*/
+
+
+
+
+header{
+    background: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.btnmenu{
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: var(--bg-color);
+    padding-inline: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: ease 0.1s;
+    margin-inline: 58px;
+}
+
+.btnmenu:hover{
+    font-weight: bold;
+    border-bottom: solid 2px var(--detail-color);
+}
+
+
+
+
+/*MAIN..........................................................................................................*/
+
+
+
+
+#secmain{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contimpact{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boximpact{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center                                                                                                                                               ;
+    font-size: 2.8rem;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    padding-bottom: 100vh;
+    padding-top: 100vh;
+    font-family: 'Alegreya SC';
+}
+
+#impact {
+    color: var(--detail-color);
+    overflow: hidden;
+    border-right: 2px solid var(--text-color); 
+    animation: typing 4s steps(16) infinite, blinker 0.6s step-end infinite;
+    max-width: fit-content;
+    font-size: 4rem;
+    padding-left: 15px;
+}
+
+p, li, h1, h2, h3, span, i {
+    z-index: 4;
+}
+
+h1, h2{
+    font-family: 'Alegreya SC';
+    font-weight: 200;
+}
+
+@keyframes typing {
+    0% { width: 0%; }
+    40% { width: 7em; }
+    50% { width: 7em; }
+    100% { width: 0%; }
+}
+
+@keyframes blinker {
+    50% { border-right-color: transparent; }
+}
+
+
+
+
+/*PAGINA INICIAL.......................................................................................................*/
+
+
+
+
+#secinitpage{
+    width: 100%;
+    height: 100svh;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70vh;
+    padding-top: 100vh;
+}
+
+#boxpresent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20vh;
+}
+
+#present{
+    font-size: 4rem;
+}
+
+#subpresent{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#boxmylinks{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 10%;
+height: fit-content;
+}
+
+.links{
+    width: fit-content;
+    height: fit-content;
+    z-index: 4;
+}
+
+#li1{
+    animation: flut1 2.5s ease-in-out 0s infinite;
+}
+
+#li2{
+    animation: flut1 2.5s ease-in-out 0.3s infinite;
+}
+
+.linkimg{
+    width: 100%;
+    height: 100%;
+    transition: ease 0.3s;
+    z-index: 4;
+}
+
+.linkimg:hover{
+    transform: scale(1.3);
+}
+
+@keyframes flut1 {
+    0%, 100%{
+        transform: translateY(0) scale(1.2);
+    }
+    50%{
+        transform: translateY(-15px) scale(1.4);
+    }
+}
+
+@keyframes flut2 {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+
+#boxperson{
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50vh;
+}
+
+#person{
+    width: 45%;
+}
+
+#bold{
+    color: var(--detail-color);
+    font-weight: 500;
+    font-variant: normal;
+}
+
+#boxphoto{
+    z-index: 4;
+}
+
+#photo{
+    width: 90%;
+    z-index: 4;
+}
+
+
+
+
+
+
+/*SOBRE MIM..........................................................................................................*/
+
+
+
+
+#secaboutme{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxtittle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30vh;
+}
+
+#tittle2{
+    font-size: 4rem;
+}
+
+#myinter{
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 25vh;
+}
+
+#myinter2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-inline: 24%;
+    padding-bottom: 25vh;
+}
+
+#mytecs{
+    font-size: 1.5rem;
+    margin-inline: 24%;
+    padding-bottom: 20vh;
+}
+
+#tecslist{
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--bg-color);
+}
+
+i{
+    color: var(--detail-color);
+    padding-right: 5px;
+    z-index: 4;
+}
+
+
+
+
+/*MEUS PROJETOS..........................................................................................................*/
+
+
+
+
+#secmyproj{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#tittle3{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    font-size: 4rem;
+}
+
+.boxcard{
+    position: relative;
+    width: 400px;
+    height: 470px; 
+    display: flex; 
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 20px;
+    border: solid 1px var(--detail-color);
+    z-index: 4;
+    box-shadow: 5px 5px 15px rgba(167, 167, 167, 0.5);
+    margin-bottom: 50px;
+}
+
+.boxcardname{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxcardname h2{
+    width: 100%;
+    text-align: center;
+}
+
+.boxcardmain{
+    width: 100%;
+}
+
+.boxcardphoto{
+    width: fit-content;
+    margin: 4%;
+}
+
+.cardphoto{
+    width:100%;
+    border-radius: 15px;
+}
+
+.boxcarddesc{
+    margin: 4%;
+    text-align: center;
+}
+
+.boxcardlink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlink{
+    padding-inline: 38px;
+    padding-block: 6px;
+    background-color: var(--detail-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    transition: linear 0.2s;
+}
+
+.cardlink:hover{
+    transform: scale(1.1);
+}
+
+#boxsoon{
+    color: #9c9c9c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*FOOTER..........................................................................................................*/
+
+
+
+
+#secfooter{
+    width: 100%;
+    position: absolute;
+    height: 90px;
+    background-color: var(--text-color);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer{
+    bottom: 0;
+}
+
+#boxmylinks2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+}
+
+#credits{
+    margin-bottom: 15px;
+}
