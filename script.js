@@ -1,3 +1,4 @@
+
     const body = document.body;
     const text = document.querySelector("#impact");
     const words = ["realidade", "inovação", "design", "experiências", "soluções", "tecnologia", "estética", "interatividade", "performance", "excelência"];
